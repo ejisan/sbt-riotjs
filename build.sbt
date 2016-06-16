@@ -1,16 +1,16 @@
 sbtPlugin := true
 
-organization := "com.ejisan.sbt"
+organization := "com.ejisan"
 
 name := """sbt-riotjs"""
 
 version := "2.2.4"
 
-licenses += ("Apache-2.0", url("http://www.apache.org/licenses/LICENSE-2.0.html"))
-
 scalaVersion := "2.10.6"
 
 scalacOptions += "-feature"
+
+crossScalaVersions := Seq(scalaVersion.value)
 
 libraryDependencies ++= Seq(
   "org.webjars" % "riot" % "2.2.4",
